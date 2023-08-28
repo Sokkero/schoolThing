@@ -11,8 +11,9 @@ int main()
     std::string input;
     while(true)
     {
-        std::cout << "\n" << appleTree->getMessage() << std::endl;
+        std::cout << appleTree->getMessage() << std::endl;
         std::cin >> input;
+        std::cout << "\n" << std::endl;
 
         std::transform(input.begin(), input.end(), input.begin(), [](unsigned char c){ return std::tolower(c); });
 
@@ -37,5 +38,6 @@ int main()
         {
             std::cout << "Let's try this again..." << std::endl;
         }
+        std::cout << "--------------------------------------------------------------------------------" << std::endl;
     }
 }
