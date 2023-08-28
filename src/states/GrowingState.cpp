@@ -4,9 +4,7 @@
 
 #include <iostream>
 
-GrowingState::GrowingState()
-: m_fertilized(0),
-m_watered(0)
+GrowingState::GrowingState() : m_fertilized(0), m_watered(0)
 {
     stateMessage = "The tree is still happily growing...\nShake, water, fertilize, exit?";
 };

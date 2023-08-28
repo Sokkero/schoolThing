@@ -4,10 +4,7 @@
 
 #include <iostream>
 
-DeadState::DeadState()
-{
-    stateMessage = "The tree is dead, all is lost...\nShake, water, fertilize, exit?";
-};
+DeadState::DeadState() { stateMessage = "The tree is dead, all is lost...\nShake, water, fertilize, exit?"; };
 
 void DeadState::enterState() { std::cout << "Tree state changed, now... dead... So sad..." << std::endl; }
 
@@ -24,5 +21,6 @@ void DeadState::treeWatered(AppleTree* tree)
 
 void DeadState::treeShook(AppleTree* tree)
 {
-    std::cout << "You're enjoying this aren't you? Shaking a dead tree. A tree you killed. So cruel..." << std::endl;
+    std::cout << "You're enjoying this aren't you? Shaking a dead tree. A tree you killed. So cruel..."
+              << std::endl;
 }

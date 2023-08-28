@@ -4,9 +4,7 @@
 
 #include <iostream>
 
-NoApplesState::NoApplesState()
-: m_fertilized(0),
-m_watered(0)
+NoApplesState::NoApplesState() : m_fertilized(0), m_watered(0)
 {
     stateMessage = "The tree is fully grown. Hope it will grow apples too...\nShake, water, fertilize, exit?";
 };

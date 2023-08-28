@@ -28,10 +28,7 @@ void AppleTree::setState(std::shared_ptr<AppleTreeState> state)
     m_currentState->enterState();
 }
 
-std::string AppleTree::getMessage() const
-{
-    return m_currentState->stateMessage;
-}
+std::string AppleTree::getMessage() const { return m_currentState->stateMessage; }
 
 void AppleTree::addFertilizer()
 {

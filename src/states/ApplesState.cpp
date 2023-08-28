@@ -4,9 +4,7 @@
 
 #include <iostream>
 
-ApplesState::ApplesState()
-: m_applesOnTree(3),
-m_timesWatered(0)
+ApplesState::ApplesState() : m_applesOnTree(3), m_timesWatered(0)
 {
     stateMessage = "The tree seems to have apples.\nShake, water, fertilize, exit?";
 };
@@ -51,8 +49,7 @@ void ApplesState::treeShook(AppleTree* tree)
     }
     else if(m_applesOnTree == 0)
     {
-        std::cout << "The tree has no more apples to give. Stop shaking it you greedy human..."
-                  << std::endl;
+        std::cout << "The tree has no more apples to give. Stop shaking it you greedy human..." << std::endl;
     }
     else if(m_applesOnTree == -1)
     {
