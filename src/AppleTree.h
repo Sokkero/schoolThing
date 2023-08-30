@@ -17,10 +17,10 @@ class AppleTree
         void setState(std::shared_ptr<AppleTreeState> state);
         std::string getMessage() const;
 
-        std::shared_ptr<AppleTreeState> growingState;
-        std::shared_ptr<AppleTreeState> noApplesState;
-        std::shared_ptr<AppleTreeState> applesState;
-        std::shared_ptr<AppleTreeState> deadState;
+        std::shared_ptr<AppleTreeState> m_growingState;
+        std::shared_ptr<AppleTreeState> m_noApplesState;
+        std::shared_ptr<AppleTreeState> m_applesState;
+        std::shared_ptr<AppleTreeState> m_deadState;
 
     private:
         std::shared_ptr<AppleTreeState> m_currentState;

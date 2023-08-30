@@ -34,7 +34,7 @@ void ApplesState::treeWatered(AppleTree* tree)
         case 3:
             std::cout << "Good job, you watered it too much. Its dead now. You killed. Are you happy now?"
                       << std::endl;
-            tree->setState(tree->deadState);
+            tree->setState(tree->m_deadState);
             break;
         default:
             break;
@@ -63,7 +63,7 @@ void ApplesState::treeShook(AppleTree* tree)
     {
         std::cout << "Nicely done, the tree snapped, fell and landed on a house, killing everyone inside. Hope it was worth it buddy"
                   << std::endl;
-        tree->setState(tree->deadState);
+        tree->setState(tree->m_deadState);
     }
 
     m_applesOnTree--;

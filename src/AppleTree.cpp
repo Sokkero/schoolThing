@@ -9,12 +9,12 @@
 
 AppleTree::AppleTree()
     : m_currentState(nullptr)
-    , growingState(std::make_shared<GrowingState>())
-    , noApplesState(std::make_shared<NoApplesState>())
-    , applesState(std::make_shared<ApplesState>())
-    , deadState(std::make_shared<DeadState>())
+    , m_growingState(std::make_shared<GrowingState>())
+    , m_noApplesState(std::make_shared<NoApplesState>())
+    , m_applesState(std::make_shared<ApplesState>())
+    , m_deadState(std::make_shared<DeadState>())
 {
-    setState(growingState);
+    setState(m_growingState);
 }
 
 void AppleTree::setState(std::shared_ptr<AppleTreeState> state)

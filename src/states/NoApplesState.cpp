@@ -26,7 +26,7 @@ void NoApplesState::treeFertilized(AppleTree* tree)
     if(m_fertilized > 0 && m_watered > 0)
     {
         std::cout << "Tree is growing apples!" << std::endl;
-        tree->setState(tree->applesState);
+        tree->setState(tree->m_applesState);
     }
     else
     {
@@ -49,13 +49,13 @@ void NoApplesState::treeWatered(AppleTree* tree)
     else
     {
         std::cout << "The tree drowned... Good job tree killer" << std::endl;
-        tree->setState(tree->deadState);
+        tree->setState(tree->m_deadState);
     }
 
     if(m_fertilized > 0 && m_watered > 0)
     {
         std::cout << "Tree is growing apples!" << std::endl;
-        tree->setState(tree->applesState);
+        tree->setState(tree->m_applesState);
     }
     else
     {
@@ -83,6 +83,6 @@ void NoApplesState::treeShook(AppleTree* tree)
     {
         std::cout << "The tree snaps, falls and lands on a dog house full of puppies. Good job puppy killer, hope youre happy now!"
                   << std::endl;
-        tree->setState(tree->deadState);
+        tree->setState(tree->m_deadState);
     }
 }
